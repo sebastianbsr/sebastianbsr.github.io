@@ -1,0 +1,41 @@
+body {
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(../images/Gemini_Generated_Image_9qoz419qoz419qoz.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+
+}
+
+.contenido-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 300px;
+}
+.caja-header {
+    /* border: 1px solid green; */
+    border-radius: 2.5%;
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    background-color: rgba(130, 130, 130, .1);
+    line-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.educacion {
+    border: 1px solid red;
+    height: 600px;
+}
+
+.experiencia {
+    border: 1px solid blue;
+    height: 600px;
+}
