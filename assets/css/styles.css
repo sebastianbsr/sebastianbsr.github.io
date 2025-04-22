@@ -3,12 +3,13 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-header {
+.contenedor-imagen {
     background-image: url(../images/Gemini_Generated_Image_fbpdfffbpdfffbpd.jpeg);
     background-repeat: no-repeat;
     background-position: right;
     height: 700px;
-
+    filter: blur(3px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .contenido-header {
@@ -24,7 +25,7 @@ header {
     width: 80%;
     margin: 0 auto;
     color: white;
-    background-color: rgba(130, 130, 130, .1);
+    background-color: rgba(130, 130, 130, .9);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,11 +33,16 @@ header {
 
 
 .educacion {
-    border: 1px solid red;
-    height: 600px;
+    height: 700px;
+    background-color: darkgray;
 }
 
 .experiencia {
     border: 1px solid blue;
     height: 600px;
+}
+
+.footer {
+    border: 1px solid yellowgreen;
+    height: 100px;
 }
