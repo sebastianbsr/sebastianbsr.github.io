@@ -3,6 +3,11 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+h2 {
+    font-family: "Poetsen One", sans-serif;
+    text-shadow: 5px 5px 15px black;
+}
+
 .contenedor-imagen {
     background-image: url(../images/Gemini_Generated_Image_fbpdfffbpdfffbpd.jpeg);
     background-repeat: no-repeat;
@@ -36,13 +41,21 @@ body {
     height: 700px;
     background-color: darkgray;
 }
+.caja-card {
+    box-shadow: 10px 5px 10px gray;
+    transition: .6s;
+}
+.caja-card:hover {
+    transform: scale(1.1);
+}
 
 .experiencia {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     height: 600px;
 }
 
 .footer {
     border: 1px solid yellowgreen;
-    height: 100px;
+    height: 120px;
+    background-color: black;
 }
