@@ -8,10 +8,6 @@ h2 {
     text-shadow: 5px 5px 15px black;
 }
 
-.logo-mio {
-    background-color: transparent;
-}
-
 .contenedor-imagen {
     background-image: url(../images/Gemini_Generated_Image_fbpdfffbpdfffbpd.jpeg);
     background-repeat: no-repeat;
@@ -58,6 +54,11 @@ h2 {
     height: 700px;
     background-color: whitesmoke;
 }
+
+.secc-portafolio {
+    height: 800px;
+    background-color: whitesmoke;
+} 
 
 .footer {
     /* border: 1px solid yellowgreen; */
