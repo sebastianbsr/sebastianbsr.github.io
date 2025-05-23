@@ -18,7 +18,7 @@ body {
 }
 
 .header {
-    background-color: rgb(34, 48, 244);
+    background-color: rgb(9, 42, 173);
     grid-area: header;
     padding: 30px 15px;
     color: white;
@@ -46,16 +46,14 @@ body {
 .main {
     background-color: white;
     grid-area: main;
-    min-height: 90vh;
+    min-height: 80vh;
 }
 .main-content {
-    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 60px;
-    border: 0.5px solid lightgray;
 }
 .img-car {
     width: 280px;
@@ -68,9 +66,9 @@ body {
     flex-direction: column;
 }
 .button {
-    padding: 10px 5px;
+    padding: 12px 0;
     margin: 15px 0;
-    background-color: #2D898B;
+    background-color: rgb(9, 42, 173);
     color: white;
     border: none;
     border-radius: 5%;
@@ -79,16 +77,22 @@ body {
 .main-number {
     text-decoration: none;
     display: flex;
-    justify-content: space-evenly;
-    color: white;
+    justify-content: space-around;
+    color: black;
     margin-bottom: 30px;
+    border: 0.5px solid lightgray;
 }
 
-
 .footer {
-    background-color: #C1DFF0;
+    background-color: rgb(9, 42, 173);
     grid-area: footer;
     min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: white;
 }
 
 @media (min-width: 576px) {
