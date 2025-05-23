@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "filter"
+    "main"
+    "footer";
+    max-height: 100vh;
+}
+
+.header {
+    background-color: rgb(34, 48, 244);
+    grid-area: header;
+    padding: 30px 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    max-height: 2vh;
+}
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter {
+    background-color: lightgray /*#2D848A */;
+    grid-area: filter;
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: white;
+    grid-area: main;
+    min-height: 90vh;
+}
+.main-content {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    border: 0.5px solid lightgray;
+}
+.img-car {
+    width: 280px;
+    border-radius: 2%;
+    box-shadow: 5px 5px 10px #434343;
+}
+.main-text {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.button {
+    padding: 10px 5px;
+    margin: 15px 0;
+    background-color: #2D898B;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+}
+.main-number {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+.footer {
+    background-color: #C1DFF0;
+    grid-area: footer;
+    min-height: 15vh;
+}
+
+@media (min-width: 576px) {
+    .container {
+        background-color: #88CCF1;
+        grid-template-areas: 
+        "header filter filter"
+        "header main main"
+        "footer main main";
+        grid-template-columns: 1fr 2fr 2fr;
+    }
+
+    .header {
+        min-height: 50vh;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .header-logo {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+    }
+}
