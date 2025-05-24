@@ -34,6 +34,10 @@ body {
     gap: 10px;
 }
 
+.menu-desktop {
+    display: none;
+}
+
 .filter {
     background-color: lightgray /*#2D848A */;
     grid-area: filter;
@@ -62,12 +66,13 @@ body {
 }
 .main-text {
     padding-top: 10px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
 .button {
     padding: 12px 0;
-    margin: 15px 0;
+    margin: 5px 0 15px 0;
     background-color: rgb(9, 42, 173);
     color: white;
     border: none;
@@ -99,22 +104,46 @@ body {
     .container {
         background-color: #88CCF1;
         grid-template-areas: 
-        "header filter filter"
-        "header main main"
-        "footer main main";
-        grid-template-columns: 1fr 2fr 2fr;
+        "header filter"
+        "header main"
+        "footer main";
+        grid-template-columns: 200px 1fr;
     }
 
     .header {
-        min-height: 50vh;
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
-    }
-    .header-logo {
+        min-height: 80vh;
         display: flex;
         justify-content: center;
-        flex-direction: row;
-        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .menu-desktop {
+        display: flex;
+    }
+    .menu-desktop > ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-desktop > ul > li > a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+
+    .footer {
+        background-color: darkblue;
+    }
+    .footer > div {
+        display: flex;
+        gap: 20px;
+    }
+    .footer > p {
+        text-align: center;
+        padding-top: 20px;
     }
 }
