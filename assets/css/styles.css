@@ -41,7 +41,7 @@ body {
 .filter {
     background-color: lightgray /*#2D848A */;
     grid-area: filter;
-    min-height: 10vh;
+    min-height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +59,7 @@ body {
 .main {
     background-color: white;
     grid-area: main;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 .main-content {
     display: flex;
@@ -93,19 +93,35 @@ body {
     width: 30%;
     padding: 13px 0px;
     margin: 5px 0 15px 0;
-    background-color: rgb(9, 42, 173);
+    background-color: #1F487E;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: .6s;
+}
+.button:hover {
+    background-color: #FFB521;
+}
+
+.main-content {
+    overflow-y: auto;
 }
 .main-number {
-    text-decoration: none;
+    border: 1px solid lightgray;
     display: flex;
-    justify-content: space-around;
-    color: black;
-    margin-bottom: 30px;
-    border: 0.5px solid lightgray;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.link-number {
+    border-right: 1px solid lightgray;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: rgb(0, 119, 255);
+}
+.link-number:last-child {
+    border-right: none;
 }
 
 .footer {
@@ -148,6 +164,14 @@ body {
         flex-direction: column;
         gap: 15px;
     }
+    .menu-desktop > ul > li {
+        transition: .6s;
+    }
+    .menu-desktop > ul > li:hover {
+        background-color: #FFB521;
+        padding: 0 70px;
+        border-radius: 2px;
+    }
     .menu-desktop > ul > li > a {
         text-decoration: none;
         color: white;
@@ -159,6 +183,8 @@ body {
 
     .main {
         padding: 0 20px 20px 20px;
+        min-height: 100vh;
+        overflow-y: auto;
     }
 
     .hind {
@@ -170,6 +196,10 @@ body {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
+    }
+
+    .main-number {
+        display: none;
     }
 
     .footer {
