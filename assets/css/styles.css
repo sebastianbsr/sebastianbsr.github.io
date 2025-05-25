@@ -18,13 +18,13 @@ body {
 }
 
 .header {
-    background-color: rgb(9, 42, 173);
+    background-color: #1A1D1A;
     grid-area: header;
     padding: 30px 15px;
     color: white;
     display: flex;
     justify-content: space-between;
-    max-height: 2vh;
+    min-height: 2vh;
 }
 .header-logo {
     display: flex;
@@ -89,12 +89,6 @@ body {
     display: none;
 }
 
-.main-text {
-    padding-top: 10px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-}
 .button {
     width: 30%;
     padding: 13px 0px;
@@ -115,7 +109,7 @@ body {
 }
 
 .footer {
-    background-color: rgb(9, 42, 173);
+    background-color: #FFB521;
     grid-area: footer;
     min-height: 15vh;
     display: flex;
@@ -123,7 +117,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    color: white;
+    color: #1A1D1A;
 }
 
 @media (min-width: 576px) {
@@ -163,12 +157,23 @@ body {
         display: none;
     }
 
+    .main {
+        padding: 0 20px 20px 20px;
+    }
+
+    .hind {
+        display: contents;
+    }
+
     .main-content {
+        padding-top: 20px;
+        display: grid;
         grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
     }
 
     .footer {
-        background-color: darkblue;
+        background-color: #FFB521;
     }
     .footer > div {
         display: flex;
