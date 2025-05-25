@@ -2,6 +2,4 @@
 
 ## Adjunto enlace para visitar la página    https://sebastianbsr.github.io/
 
-Desarrollado con 💚 y paciencia por Sebastián Riquelme
-    Academia Desafío Latam
-2025 ©
+Desarrollado con 💚 y paciencia por Sebastián Riquelme / Academia Desafío Latam 2025 ©
