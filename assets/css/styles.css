@@ -14,7 +14,7 @@ body {
     "footer";
     min-height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 160px 1fr 100px;
+    grid-template-rows: 170px 1fr 100px;
 }
 
 .header {
@@ -25,66 +25,113 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .img-logo {
-    margin: 0;
+    margin-top: 40px;
     padding: 0;
-    width: 200px;
+    width: 110px;
+    transition: 1s;
 }
-.nav-bar {
-    margin-bottom: 20px;
+.img-logo:hover {
+    transform: rotate(360deg);
 }
+
 .nav-bar ul {
     padding-bottom: 60px;
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 50px;
 }
 .nav-bar ul li {
     list-style: none;
+    transition: .5s linear;
+}
+.nav-bar ul li:hover {
+    border-radius: 2px;
+    transform: scale(1.2);
+    border-bottom: 2px solid #F9F5FF;
+
 }
 .nav-bar ul li a {
     text-decoration: none;
     font-size: 16px;
-    color: whitesmoke;
-    /* color: #B80C09; */
+    color: #DFE0E2;
+    transition: .6s;
 }
-
+.nav-bar ul li a:hover {
+    color: white;
+}
 
 .main {
     background-color: #DFE0E2;
     grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container-card {
-    margin-top: 10px;
+    border: .5px solid lightgray;
     border-radius: 5px;
-    min-height: 60vh;
+    background-color: #F9F5FF;
+    padding: 10px 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 7px 6px 10px gray;
+    transition: .8s;
+}
+.container-card:hover {
+    transform: scale(1.1);
+}
+
+.container-img {
+    background-color: #F2F0EB;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.navaja-img {
+    width: 260px;
+}
+
+.container-info {
+    border-radius: 5px;
+    padding: 5px 8px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .8s;
+}
+.container-info:hover {
+    background-color: #6B0504;
+    color: white;
+}
+
+.card-text {
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.container-img {
-    background-color: #F2F0EB;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-.navaja-img {
-    width: 300px;
-}
-.card-text {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
-    gap: 10px;
-}
+
 .button {
-    margin-top: 15px;
-    padding: 5px 20px;
+    width: 31vh;
+    padding: 8px;
+    margin-top: 5px;
     color: #DFE0E2;
-    background-color: #6B0504;
+    background-color: #9E2B25;
     border: none;
     border-radius: 3px;
+    cursor: pointer;
+    transition: .4s;
+    box-shadow: 5px 4px 10px gray;
+}
+.button:active {
+    background-color: #6B0504;
+    box-shadow: 0px 0px 0px white;
+    color: #F2F0EB;
 }
 
 .footer {
@@ -101,4 +148,13 @@ body {
     display: flex;
     gap: 20px;
     padding-top: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-icon a {
+    transition: .5s;
+}
+.footer-icon a:hover {
+    transform: scale(1.2);
 }
