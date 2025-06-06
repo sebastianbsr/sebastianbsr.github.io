@@ -24,6 +24,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: bg 3s infinite;
+  animation-direction: alternate;
+}
+@keyframes bg {
+  from {
+    background-color: #6b0504;
+  }
+  to {
+    background-color: #1e1e24;
+  }
 }
 
 .img-logo {
@@ -68,11 +78,15 @@ body {
   justify-content: center;
   align-items: center;
 }
+.displey{
+  display: none;
+}
+
 .container-card {
   border: 0.5px solid lightgray;
   border-radius: 5px;
   background-color: #f9f5ff;
-  padding: 10px 10px;
+  padding: 10px 5px;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
@@ -90,7 +104,7 @@ body {
   margin-bottom: 5px;
 }
 .navaja-img {
-  width: 260px;
+  width: 220px;
 }
 
 .container-info {
@@ -116,7 +130,7 @@ body {
 }
 
 .button {
-  width: 31vh;
+  width: 26vh;
   padding: 8px;
   margin-top: 5px;
   color: #dfe0e2;
@@ -190,5 +204,15 @@ body {
     grid-template-rows: repeat(2, 1fr);
     padding: 30px;
     gap: 30px;
-}
+  }
+  .displey{
+    display: contents;
+  }
+
+  .main {
+    object-fit: contain;
+  }
+  .navaja-img {
+    width: 20vh;
+  }
 }
