@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+#mi-imagen {
+    width: 620px;
+    cursor: pointer;
+}

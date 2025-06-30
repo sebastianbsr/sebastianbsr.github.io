@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/sticker.css">
+    <title>Stickers !</title>
+</head>
+<body>
+    <body>
+
+        <h2>Selecciona hasta 10 stickers</h2>
+
+        <div class="contenedor">
+          <div class="sticker">
+            <img class="imagen-sticker" src="./assets/images/sticker-html.jpg" alt="Sticker 1">
+            <input id="sticker1" type="number" min="0" value="0">
+          </div>
+          <div class="sticker">
+            <img class="imagen-sticker" src="./assets/images/sticker-css3.jpg" alt="Sticker 2">
+            <input id="sticker2" type="number" min="0" value="0">
+          </div>
+          <div class="sticker">
+            <img class="imagen-sticker" src="./assets/images/sticker-js.webp" alt="Sticker 3">
+            <input id="sticker3" type="number" min="0" value="0">
+          </div>
+        </div>
+
+        <button id="verificar">Verificar</button>
+        <p id="resultado"></p>
+
+        <script>
+          document.querySelector('#verificar').addEventListener('click', function() {
+            let s1 = Number(document.querySelector('#sticker1').value);
+            let s2 = Number(document.querySelector('#sticker2').value);
+            let s3 = Number(document.querySelector('#sticker3').value);
+
+            let total = s1 + s2 + s3;
+
+            let resultado = document.querySelector('#resultado');
+
+            if (total <= 10) {
+              resultado.innerHTML = `Llevas ${total} stickers`;
+            } else {
+              resultado.innerHTML = "Llevas demasiados stickers";
+            }
+          });
+        </script>
+</body>
+</html>

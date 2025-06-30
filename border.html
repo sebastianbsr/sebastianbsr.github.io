@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/borde.css">
+    <title>Efecto Borde</title>
+</head>
+<body>
+
+    <h1>Haz clic en la imagen</h1>
+    <img id="mi-imagen" src="./assets/images/nature_dog.jpg" alt="Imagen de prueba">
+
+    <script>
+      const imagen = document.querySelector('#mi-imagen');
+
+      imagen.addEventListener('click', function() {
+        if (imagen.style.border) {
+          imagen.style.border = '';
+        } else {
+          imagen.style.border = '2px solid red';
+        }
+      });
+    </script>
+
+  </body>
+  </html>
+</html>
